@@ -5,7 +5,7 @@ sns_client = boto3.client('sns')
 
 # Create an SNS topic
 topic_name = 'my-topic'
-response = sns_client.create_topic(Name=queue)
+response = sns_client.create_topic(Name="queue")
 topic_arn = response['TopicArn']
 
 # Add an email subscription to the topic
